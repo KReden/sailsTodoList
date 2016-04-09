@@ -1,0 +1,27 @@
+{
+  "name": "todoList",
+  "description": "a Sails todo application",
+  "main": "app.js",
+  "authors": [
+    "kylereden"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/KReden/sailsTodoList",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.3",
+    "angular-route": "^1.5.3",
+    "angular-mocks": "^1.5.3",
+    "moment": "^2.12.0",
+    "jquery": "^2.2.3",
+    "moment-timezone": "^0.5.3"
+  }
+}
