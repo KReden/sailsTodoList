@@ -11,3 +11,4 @@ a [Sails](http://sailsjs.org) application
 - List
   - has many todos
   - name
+  - description

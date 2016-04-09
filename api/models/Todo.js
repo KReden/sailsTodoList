@@ -12,8 +12,14 @@ module.exports = {
       type: 'string',
       required: true
     },
+    priority:{
+      type: 'text',
+      enum: ['high', 'medium', 'low'],
+      defaultsTo: 'low'
+    },
     list: {
-      model: 'list'
+      model: 'list',
+      required: true
     }
   }
 };

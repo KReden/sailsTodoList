@@ -12,6 +12,10 @@ module.exports = {
       type: 'string',
       required: true
     },
+    description: {
+      type: 'string'
+    },
+    //Associations
     todos: {
       collection: 'todo',
       via: 'list'
