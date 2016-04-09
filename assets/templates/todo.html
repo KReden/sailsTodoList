@@ -31,7 +31,7 @@
       <h3>{{ item.description }}</h3>
       <h4>Priority: {{ item.priority }}</h4>
     </div>
-    <md-checkbox class="md-secondary" ng-model="todo.completed"></md-checkbox>
+    <md-checkbox ng-model="item.completed" class="md-secondary" ng-click="toggleTodo(item.id, item.completed)"></md-checkbox>
   </md-list-item>
 </md-list>
 

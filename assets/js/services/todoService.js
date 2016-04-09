@@ -22,9 +22,9 @@
         });
         return defer.promise;
       },
-      'removeTodo': function(todo) {
+      'toggleTodo': function(updateData) {
         var defer = $q.defer();
-        $http.post('/todo/removeTodo', todo).success(function(resp){
+        $http.post('/todo/toggleTodo', updateData).success(function(resp){
           defer.resolve(resp);
         }).error( function(err) {
           defer.reject(err);

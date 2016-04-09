@@ -31,9 +31,10 @@
     });
   };
 
-  $scope.removeTodo = function(todo) {
-    TodoService.removeTodo(todo).then(function(response) {
-      $scope.todos.splice($scope.todos.indexOf(todo), 1)
+  $scope.toggleTodo = function(id, completed) {
+    var updateData = {id: id, completed: completed};
+    TodoService.toggleTodo(updateData).then(function(response) {
+      updateTodoList();
     });
   };
 

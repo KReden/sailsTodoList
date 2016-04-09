@@ -11,8 +11,8 @@ module.exports = {
       next(todo);
     });
   },
-  removeTodo: function(todoVal, next) {
-    Todo.destroy({value: todoVal}).exec(function(err, todo) {
+  toggleTodo: function(todo, next) {
+    Todo.update({id: todo.id}, {completed: todo.completed}).exec(function(err, todo) {
       if(err) throw err;
       next(todo);
     });

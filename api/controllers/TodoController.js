@@ -22,10 +22,15 @@ module.exports = {
       res.send('Bad Request!');
     }
   },
-  removeTodo: function(req, res) {
-   var todoVal = (req.body.value) ? req.body.value : undefined
-    TodoService.removeTodo(todoVal, function(success) {
-      res.json(success);
-    });
+  toggleTodo: function(req, res) {
+    console.log(req.body)
+   var todo = (req.body) ? req.body : undefined
+   if(todo){
+     TodoService.toggleTodo(todo, function(success) {
+       res.json(success);
+     });
+   }else{
+     res.send('Bad Request!');
+   }
   }
 };
