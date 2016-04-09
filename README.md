@@ -4,5 +4,10 @@ a [Sails](http://sailsjs.org) application
 
 ## Models
 - todo
-  - id
   - description
+  - belong to a list
+    - listId
+
+- List
+  - has many todos
+  - name
