@@ -8,6 +8,9 @@
 module.exports = {
 
   attributes: {
-    description: 'string'
+    description:{
+      type: 'string',
+      required: true
+    }
   }
 };
