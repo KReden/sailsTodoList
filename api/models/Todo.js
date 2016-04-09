@@ -17,6 +17,10 @@ module.exports = {
       enum: ['high', 'medium', 'low'],
       defaultsTo: 'low'
     },
+    completed: {
+      type: 'boolean',
+      defaultsTo: false
+    },
     list: {
       model: 'list',
       required: true
