@@ -8,6 +8,7 @@
 
     <!--STYLES-->
     <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="/styles/importer.css">
     <!--STYLES END-->
   </head>
@@ -16,12 +17,15 @@
     <md-content>
       <md-toolbar class="md-hue-2">
         <div class="md-toolbar-tools">
+          <md-button class="md-icon-button" aria-label="Lists">
+            <md-icon>menu</md-icon>
+          </md-button>
           <h2>
             <span>Todo App</span>
           </h2>
         </div>
       </md-toolbar>
-      <div ng-view></div>
+      <md-content layout="column" layout-padding ng-view></md-content>
     </md-content>
 
     <!--SCRIPTS-->
@@ -35,6 +39,8 @@
     <script src="/bower_components/angular-material/angular-material.js"></script>
     <script src="/js/app.js"></script>
     <script src="/js/controllers/todo.js"></script>
+    <script src="/js/controllers/todoList.js"></script>
+    <script src="/js/services/todoListService.js"></script>
     <script src="/js/services/todoService.js"></script>
     <!--SCRIPTS END-->
   </body>

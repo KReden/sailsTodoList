@@ -1,0 +1,16 @@
+<md-whiteframe
+  class="md-whiteframe-1dp"
+  ng-repeat="list in lists"
+  ng-cloak>
+  <md-toolbar class="md-primary">
+    <div class="md-toolbar-tools">
+      <h2 class="md-flex">{{list.name}}</h2>
+    </div>
+  </md-toolbar>
+  <md-list>
+    <md-list-item ng-repeat="todo in list.todos">
+      <p> {{ todo.description }} </p>
+      <md-checkbox class="md-secondary" ng-model="todo.completed" ng-click="toggleTodo(item.id, item.completed)"></md-checkbox>
+    </md-list-item>
+  </md-list>
+</md-whiteframe>

@@ -9,8 +9,8 @@
   todoApp.config(['$routeProvider',
     function($routeProvider) {
       $routeProvider.when('/', {
-        templateUrl: '/templates/todo.html',
-        controller: 'TodoCtrl'
+        templateUrl: '/templates/list.html',
+        controller: 'TodoListCtrl'
       }).otherwise({
         redirectTo: '/',
         caseInsensitiveMatch: true
